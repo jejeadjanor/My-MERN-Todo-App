@@ -81,6 +81,7 @@ class CreateTask extends Component {
                         className="form-control"
                         value={this.state.todo_task}
                         onChange = {this.onChangeTodoTask}
+                        required
                         />
                     </div>
 
@@ -90,6 +91,7 @@ class CreateTask extends Component {
                         className="form-control"
                         value={this.state.todo_person}
                         onChange = {this.onChangeTodoPerson}
+                        required
                         />
                     </div>
 
@@ -99,10 +101,11 @@ class CreateTask extends Component {
                         className="form-control"
                         value={this.state.todo_timeplace}
                         onChange = {this.onChangeTodoTimePlace}
+                        required
                         />
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-group" required>
                         <div className=" form-check form-check-inline">
                             <input className="form-check-input"
                             type="radio"
